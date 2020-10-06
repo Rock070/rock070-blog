@@ -1,0 +1,163 @@
+* {
+    position: relative;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+nav .nav {
+    text-align: center;
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav .nav-left a {
+        padding: 0;
+        text-decoration: none;
+        color: #787878;
+}
+    
+nav .nav .nav-left a:focus {
+        color: #787878;
+        text-decoration: none;
+}
+nav .nav .nav-right a {
+    text-decoration: none;
+    color: #787878;
+}
+
+nav .nav .nav-right a:focus {
+    color: #787878;
+    text-decoration: none;
+}
+
+
+nav .nav span {
+    cursor: pointer;
+    padding: 10px;
+    color: #787878;
+}
+
+nav .nav .nav-left {
+    display: flex;  
+    align-items: center;
+
+}
+
+nav .nav .nav-right {
+    display: flex;  
+    align-items: center;
+
+}
+
+nav .nav .nav-left h2{
+    margin-right: 10px;
+}
+header .img {
+    height: 450px;
+    background-image: url('./cover.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    /* z-index: -1; */
+    color: white;
+}
+header .img::before {
+    content: " ";
+    display: block;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    pointer-events: none;
+
+}   
+
+header .img .article-infos {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+
+
+header .img .article-infos .article-title {
+    font-weight: bold;
+    font-size: 60px;
+    padding: 0px 0px;
+    transform: translateY(-10%);
+}
+header .img .article-infos .article-type {
+    display: inline;
+    padding: 2px 7px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    transform: translate(10%, -20%);
+}
+
+header .img .article-infos .article-type+div{
+    transform: translateY(100%);
+}
+
+header .img .article-infos div .article-host {
+    /* margin-top: 10px; */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+header .img .article-infos div .article-create-at {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+section#articles {
+    padding: 0px 170px;
+    
+}
+
+section#articles .article-list .article {
+    padding: 10px 50px;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+section#articles .article-list .article hr {
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+section#articles .article-list .article .article-content {
+    padding-top: 60px;
+    white-space: pre-line;
+    word-break: break-word;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
+
+
+
+footer {
+    background: #323232;
+    color: white;
+    text-align: center;
+    padding: 10px 0px; 
+}
